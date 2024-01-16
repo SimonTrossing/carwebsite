@@ -1,0 +1,48 @@
+
+
+img{
+    max-width: 640px;
+    max-height: 480px;
+    width: 33%;
+    height: auto;
+    aspect-ratio:  3 / 2;
+}
+
+body{
+    display:grid;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: repeat(4 auto);
+    background-color: black;
+    text-align: center;
+    color:  #171313;
+}
+header{
+    grid-column: 1/-1;
+    background-color: #7E7979;
+}
+.title{
+    
+    text-align: center;
+    background-color: #B3ADAD;
+    margin-top: -12.92px;
+    margin-bottom: -12.92px;
+}
+article{
+    grid-column: 1/-1;
+}
+.cars{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+@media screen and (max-width: 500px) {
+    .cars{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+} 
